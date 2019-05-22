@@ -39,6 +39,7 @@
                         <h4 class="question">Question 1</h4>
                         <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
                         <select class="form-control" id="question1">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -50,6 +51,7 @@
                         <h4 class="question">Question 2</h4>
                         <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
                         <select class="form-control" id="question2">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -61,6 +63,7 @@
                         <h4 class="question">Question 3</h4>
                         <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
                         <select class="form-control" id="question3">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -72,6 +75,7 @@
                         <h4 class="question">Question 4</h4>
                         <h5>You rarely do something just out of sheer curiosity.</h5>
                         <select class="form-control" id="question4">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -83,6 +87,7 @@
                         <h4 class="question">Question 5</h4>
                         <h5>People can rarely upset you.</h5>
                         <select class="form-control" id="question5">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -94,6 +99,7 @@
                         <h4 class="question">Question 6</h4>
                         <h5>It is often difficult for you to relate to other people’s feelings.</h5>
                         <select class="form-control" id="question6">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -105,6 +111,7 @@
                         <h4 class="question">Question 7</h4>
                         <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
                         <select class="form-control" id="question7">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -116,6 +123,7 @@
                         <h4 class="question">Question 8</h4>
                         <h5>You rarely get carried away by fantasies and ideas.</h5>
                         <select class="form-control" id="question8">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -125,8 +133,10 @@
                     </div>
                     <div class="form-group">
                         <h4 class="question">Question 9</h4>
-                        <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+                        <h5>You think that everyone’s views should be respected regardless of whether they are supported
+                            by facts or not.</h5>
                         <select class="form-control" id="question9">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -138,6 +148,7 @@
                         <h4 class="question">Question 10</h4>
                         <h5>You feel more energetic after spending time with a group of people.</h5>
                         <select class="form-control" id="question10">
+                            <option value="empty"></option>
                             <option value="1">1(Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -145,50 +156,90 @@
                             <option value="5">5(Strongly Agree)</option>
                         </select>
                     </div>
-                    <button id="submit" type="submit" class="btn btn-primary survey-btn" > Submit</button>
+                    <button id="submit" type="submit" class="btn btn-primary survey-btn"> Submit</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- MODAL -->
+    <div id="FriendMatchModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Your best friend match</h1>
+                </div>
+                <div class="modal-body">
+                    <h2 id="FriendMatch"></h2>
+                    <img id="FriendPicture" src="#" class="col-lg-6">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <br>
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <span><p class="copyright" style="float:left;"> copyright&copy; 2019 Ily M.
-            <a href="/api/tables" target="blank" >API Table Link |</a> 
-            <a href="https://github.com/ilyrodriguez/friendFinder" target="blank">Git Hub</a></span>
+            <span>
+                <p class="copyright" style="float:left;"> copyright&copy; 2019 Ily M. <div style="float: right;">
+                        <a href="/api/friends" target="blank">API Friends List |</a>
+                        <a href="https://github.com/ilyrodriguez/friendFinder" target="blank">Git Hub</a>
+            </span></div>
         </div>
     </footer>
 
     </div>
 
+    <script type="text/javascript">
+
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            var valid = true;
+            if ($("#name").val() === "" || $("#picture").val() === "") {
+                valid = false;
+            }
+            else if ($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+                // else if($("#question1", "#question2", "#question3", "#question4","#question5", "#question6", "#question7", "#question8","question9", "question10").val() === "empty") {
+                valid = false;
+            }
+            if (valid === true) {
+
+                var surveyData = {
+                    name: $("#name").val(),
+                    photo: $("#picture").val(),
+                    scores: [
+                        $("#question1").val(),
+                        $("#question2").val(),
+                        $("#question3").val(),
+                        $("#question4").val(),
+                        $("#question5").val(),
+                        $("#question6").val(),
+                        $("#question7").val(),
+                        $("#question8").val(),
+                        $("#question9").val(),
+                        $("#question10").val()
+                    ]
+                };
+
+                $.post("/api/friends", surveyData, function (data) {
+                    $("#FriendMatch").text(data.name);
+                    $("#FriendPicture").attr("src", data.photo);
+                    $("#FriendMatchModal").modal("toggle");
+                });
+            } else {
+                alert("Survey is incomplete!" + "\n" + "Please complete all the questions for a perfect Friend Match");
+            }
+         
+        });
+
+    </script>
+
 </body>
 
 </html>
-
-<script type="text/javascript">
-
-    $("#submit").on("click", function (event) {
-        event.preventDefault();
-
-        var surveyInput = {
-          name: $("#name").val(),
-          photo: $("#picture").val(),
-          scores: [
-            $("#question1").val(),
-            $("#question2").val(),
-            $("#question3").val(),
-            $("#question4").val(),
-            $("#question5").val(),
-            $("#question6").val(),
-            $("#question7").val(),
-            $("#question8").val(),
-            $("#question9").val(),
-            $("#question10").val()
-          ]
-        };
-      });
-
-
-</script>
