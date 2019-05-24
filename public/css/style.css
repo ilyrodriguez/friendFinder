@@ -1,73 +1,87 @@
-body{
-    background-color: rgb(218, 210, 164); 
-    background-image: url(/background.jpg);
+body {
+    background-color: rgb(218, 210, 164);
     font-family: 'Dosis', sans-serif;
 }
-.container{
+
+.container {
     margin-left: 160px;
 }
-.welcome{
+
+.welcome {
     font-size: 60px;
 }
-.title{
+
+.title {
     font-size: 140px;
     margin-top: -80px;
     margin-left: 80px;
     font-weight: bold;
     color: rgb(2, 96, 184);
 }
-#symbol{
+
+#symbol {
     height: 120px;
     float: left;
 }
-#symbol2{
+
+#symbol2 {
     height: 50px;
     margin-left: 170px;
-    margin-top: 20px;
-    position:absolute;
-	top: 10px;
-	left: 10px;
+    margin-top: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     z-index: 1;
 }
 
-/* .box{
-    background-color:  rgb(228, 221, 163);
-    border-radius: 5px 100px 5px 100px;
-    box-shadow: 0 0 15px;
-    height: 550px;
-    margin: 50px;
-} */
-h1{
+h1 {
     padding-top: 50px;
 }
-#survey-heading{
+
+#survey-heading {
     margin-left: 70px;
     margin-top: -20px;
     font-weight: bold;
     color: rgb(2, 96, 184);
+    font-size: 55px;
 }
-#pics{
+
+#pics {
     margin-left: 900px;
     margin-top: 10px;
-    position:absolute;
-	top: 10px;
-	left: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     z-index: 1;
 }
 
-form{
-    margin-top: 50px;
-    background-color:  rgb(228, 221, 163);
+form {
+    margin-top: 30px;
+    background-color: rgb(228, 221, 163);
     border-radius: 3px 60px 3px 60px;
     box-shadow: 0 0 15px;
     padding: 70px;
 }
-.copyright{
+
+.copyright-survey {
+    margin-left: 20px;
+}
+
+.copyright {
     margin-left: -160px;
 }
-footer{
+
+.footer-survey {
+    margin: 0 auto;
+    width: auto;
+    bottom: 0;
+    position: relative;
+}
+
+.footer-home {
     position: absolute;
-    bottom:0;
-    width:70%;
-    height:60px;  
+    bottom: 0;
+    width: 70%;
+    height: 60px;
+    margin: 0 auto;
 }

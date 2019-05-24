@@ -27,7 +27,7 @@ var friends = [
 	{
 		name: "Bon' Qui' Qui'",
 		photo: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fewedit.files.wordpress.com%2F2016%2F09%2Fscreen-shot-2016-09-06-at-2-06-36-pm.jpg&w=400&c=sc&poi=face&q=85",
-		scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+		scores: [2, 1, 2, 1, 3, 1, 3, 1, 4, 4]
 	},
 	{
 		name: "Javier Aneudi Rainiel Estanli Yan Carlos",
