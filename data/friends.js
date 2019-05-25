@@ -7,12 +7,12 @@ var friends = [
 	{
 		name: "Sha' Nay' Nay'",
 		photo: "https://i2-prod.mirror.co.uk/incoming/article6354925.ece/ALTERNATES/s615b/b784faec-aef9-4f36-9b64-c5f371a341fdvffg.jpg",
-		scores: [2, 1, 4, 1, 2, 3, 5, 2, 3, 3]
+		scores: [2, 5, 4, 5, 2, 4, 5, 2, 3, 3]
 	},
 	{
 		name: "Peggy",
 		photo: "http://i.imgur.com/iYJiM.jpg",
-		scores: [3, 1, 2, 3, 1, 2, 5, 1, 5, 1]
+		scores: [3, 2, 2, 3, 1, 2, 5, 1, 5, 1]
 	},
 	{
 		name: "Pat",
@@ -22,7 +22,7 @@ var friends = [
 	{
 		name: "Borat",
 		photo: "https://i.pinimg.com/originals/c7/b8/b4/c7b8b453ce9f0ca6ebb7a0bd30b076e5.jpg",
-		scores: [2, 1, 3, 4, 2, 4, 2, 5, 1, 3]
+		scores: [2, 5, 3, 4, 5, 4, 5, 5, 4, 5]
 	},
 	{
 		name: "Bon' Qui' Qui'",
@@ -32,7 +32,7 @@ var friends = [
 	{
 		name: "Javier Aneudi Rainiel Estanli Yan Carlos",
 		photo: "https://i.pinimg.com/originals/a3/72/39/a37239f1a2b374213c05bdb387a81939.jpg",
-		scores: [1, 2, 5, 4, 3, 2, 5, 1, 2, 1]
+		scores: [1, 2, 3, 1, 1, 1, 2, 1, 2, 1]
 	}
 ];
 
