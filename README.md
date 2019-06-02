@@ -6,6 +6,7 @@ The application will take in results from the survey then compare the results ag
 
 https://encontrador-de-amigos.herokuapp.com/
 
+![image](https://user-images.githubusercontent.com/24906805/58766823-42bc6980-8551-11e9-924d-1b85edad458b.png)
 
 
 UCF Coding Bootcamp  -  May 2019
