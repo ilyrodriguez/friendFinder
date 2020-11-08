@@ -1,12 +1,14 @@
 body {
     background-color: #faf4a5;
     font-family: 'Dosis', sans-serif;
+    padding-bottom: 20px;
 }
 
 .container {
     margin-left: 160px;
 }
 
+/* HOME PAGE  */
 .welcome {
     font-size: 60px;
 }
@@ -52,8 +54,9 @@ h1 {
 
 .survey-btn {
     background-color: #0165A5;
+    border: solid #0165A5;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     padding: 10px 35px;
 }
 
@@ -90,6 +93,31 @@ img#pic3 {
     right: 18%;
 }
 
+.footer-home {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 60px;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+/* SURVEY PAGE  */
+img#symbol-survey {
+    width: 38%;
+}
+
+label.label-text {
+    padding-bottom: 1rem;
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 24px;
+}
 form {
     margin-top: 30px;
     background-color: rgb(228, 221, 163);
@@ -107,17 +135,11 @@ form {
 }
 
 .footer-survey {
+    padding-bottom: 1rem;
     margin: 0 auto;
     width: auto;
     bottom: 0;
     position: relative;
-}
-
-.footer-home {
-    position: absolute;
-    bottom: 0;
-    width: 70%;
-    height: 60px;
-    margin: 0 auto;
     font-weight: 700;
 }
+
