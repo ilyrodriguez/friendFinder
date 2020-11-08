@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(218, 210, 164);
+    background-color: #faf4a5;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -11,6 +11,10 @@ body {
     font-size: 60px;
 }
 
+h2{
+    font-size: 36px;
+}
+
 .title {
     font-size: 140px;
     margin-top: -80px;
@@ -20,7 +24,7 @@ body {
 }
 
 #symbol {
-    height: 120px;
+    height: 150px;
     float: left;
 }
 
@@ -46,13 +50,44 @@ h1 {
     font-size: 55px;
 }
 
-#pics {
-    margin-left: 900px;
-    margin-top: 10px;
+.survey-btn {
+    background-color: #0165A5;
+    color: white;
+    font-weight: 500;
+    padding: 10px 35px;
+}
+
+.survey-btn:hover{
+    background-color: #040f77;
+    color: white;
+}
+
+img#pic1, #pic2, #pic3 {
+    float: right;
+    border: 24px solid white;
+    width: 40%;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    border-radius: 50%;
+}
+
+img#pic1 {
     z-index: 1;
+    top: 2%;
+    width: 16%;
+    right: 16%;
+}
+
+img#pic2 {
+    z-index: 2;
+    right: 2%;
+    width: 20%;
+    top: 23%;
+}
+
+img#pic3 {
+    width: 22%;
+    top: 44%;
+    right: 18%;
 }
 
 form {
@@ -84,4 +119,5 @@ form {
     width: 70%;
     height: 60px;
     margin: 0 auto;
+    font-weight: 700;
 }
