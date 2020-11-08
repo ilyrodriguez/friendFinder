@@ -1,4 +1,4 @@
-var friends = [
+var friendsResults = [
 	{
 		name: "Tammy",
 		photo: "https://i.pinimg.com/originals/9e/a9/3d/9ea93de37cdc2742144ad6ec7afece42.jpg",
@@ -36,4 +36,4 @@ var friends = [
 	}
 ];
 
-module.exports = friends;
+module.exports = friendsResults;
